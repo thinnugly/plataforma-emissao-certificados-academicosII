@@ -36,7 +36,7 @@ composer install
 cp .env.example .env
 ```
 
-Edite o `.env` com as configurações do seu banco de dados, como `DB_HOST`, `DB_PORT`, `DB_DATABASE`, `DB_USERNAME` e `DB_PASSWORD`.
+Edite o `.env` com as configurações do seu banco de dados, como `DB_CONNECTION`, `DB_HOST`, `DB_PORT`, `DB_DATABASE`, `DB_USERNAME` e `DB_PASSWORD`.
 
 4. **Gerar chave da aplicação**
 
