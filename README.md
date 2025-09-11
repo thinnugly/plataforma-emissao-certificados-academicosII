@@ -6,6 +6,11 @@ This application allows the issuance of academic certificates and the management
 
 ---
 
+**Author**: Renato Madeia Muiambo  
+**Email**: renatomuiambo24@gmail.com
+
+---
+
 ## Prerequisites
 
 * PHP >= 8.1
