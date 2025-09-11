@@ -1,58 +1,58 @@
-# Plataforma de Emissão de Certificados Acadêmicos
+# Academic Certificates Issuing Platform
 
-## Descrição
+## Description
 
-Esta aplicação permite a emissão de certificados acadêmicos e gerenciamento de usuários, funções (roles) e permissões utilizando Laravel e Laratrust.
+This application allows the issuance of academic certificates and the management of users, roles, and permissions using Laravel and Laratrust.
 
 ---
 
-## Pré-requisitos
+## Prerequisites
 
 * PHP >= 8.1
 * Composer
-* MySQL ou outro banco compatível
-* Node.js e npm
+* MySQL or another compatible database
+* Node.js and npm
 
 ---
 
-## Instalação
+## Installation
 
-1. **Clonar o repositório**
+1. **Clone the repository**
 
 ```bash
 git clone https://github.com/thinnugly/plataforma-emissao-certificados-academicosII.git
 cd plataforma-emissao-certificados-academicosII
 ```
 
-2. **Instalar dependências do PHP**
+2. **Install PHP dependencies**
 
 ```bash
 composer install
 ```
 
-3. **Criar e configurar o arquivo `.env`**
+3. **Create and configure the `.env` file**
 
 ```bash
 cp .env.example .env
 ```
 
-Edite o `.env` com as configurações do seu banco de dados, como `DB_CONNECTION`, `DB_HOST`, `DB_PORT`, `DB_DATABASE`, `DB_USERNAME` e `DB_PASSWORD`.
+Edit the `.env` file with your database settings, such as `DB_CONNECTION`, `DB_HOST`, `DB_PORT`, `DB_DATABASE`, `DB_USERNAME`, and `DB_PASSWORD`.
 
-4. **Gerar chave da aplicação**
+4. **Generate application key**
 
 ```bash
 php artisan key:generate
 ```
 
-5. **Rodar migrations e seeders**
+5. **Run migrations and seeders**
 
 ```bash
 php artisan migrate:fresh --seed
 ```
 
-> Este comando cria todas as tabelas e popula roles, permissões e usuários padrão.
+> This command will create all tables and populate roles, permissions, and default users.
 
-6. **Limpar caches (opcional)**
+6. **Clear caches (optional)**
 
 ```bash
 php artisan config:clear
@@ -61,25 +61,25 @@ php artisan route:clear
 php artisan view:clear
 ```
 
-7. **Instale as dependências do NPM (Frontend)**
+7. **Install NPM dependencies (Frontend)**
 
 ```bash
 npm install
 ```
 
-8. **Rodar o servidor local**
+8. **Run the local development server**
 
 ```bash
 php artisan serve
 ```
 
-Acesse em `http://127.0.0.1:8000`.
+Access the application at `http://127.0.0.1:8000`.
 
 ---
 
-## Roles e Usuários Padrão
+## Default Roles and Users
 
-O seeder do Laratrust cria automaticamente roles, permissões e usuários de exemplo:
+The Laratrust seeder automatically creates roles, permissions, and example users:
 
 | Role          | Usuário                                               | Senha    |
 | ------------- | ----------------------------------------------------- | -------- |
@@ -90,15 +90,15 @@ O seeder do Laratrust cria automaticamente roles, permissões e usuários de exe
 | Professor     | [professor@app.com](mailto:professor@app.com)         | password |
 | Funcionario   | [funcionario@app.com](mailto:funcionario@app.com)     | password |
 
-> Estes usuários podem ser usados para login e testes iniciais.
+> You can use these users to log in and perform initial tests.
 
 ---
 
-## Observações
+## Notes
 
-* As permissões são configuradas de acordo com a estrutura definida em `config/laratrust_seeder.php`.
-* A aplicação utiliza Laratrust para gerenciamento de roles e permissões.
-* Alterações no `.env` requerem limpar o cache de configuração:
+* Permissions are configured according to the structure defined in `config/laratrust_seeder.php`.
+* The application uses Laratrust for role and permission management.
+* Changes in the `.env` file require clearing the configuration cache:
 
 ```bash
 php artisan config:cache
@@ -106,38 +106,39 @@ php artisan config:cache
 
 ---
 
-## Comandos Úteis
+## Useful Commands
 
-* Rodar migrations e seeders: `php artisan migrate:fresh --seed`
-* Limpar caches: `php artisan optimize:clear`
-* Rodar servidor local: `php artisan serve`
-
----
-
-## Contribuição
-
-1. Crie uma branch para sua feature:
-
-```bash
-git checkout -b minha-feature
-```
-
-2. Faça commits claros:
-
-```bash
-git commit -m "Descrição da feature"
-```
-
-3. Envie para o repositório remoto:
-
-```bash
-git push origin minha-feature
-```
-
-4. Abra um Pull Request.
+* Run migrations and seeders: `php artisan migrate:fresh --seed`
+* Clear all caches: `php artisan optimize:clear`
+* Start local development server: `php artisan serve`
 
 ---
 
-## Licença
+## Contribution
+
+1. Create a branch for your feature:
+
+```bash
+git checkout -b my-feature
+```
+
+2. Make clear commits:
+
+```bash
+git commit -m "Feature description"
+```
+
+3. Push to the remote repository:
+
+```bash
+git push origin my-feature
+```
+
+4. Open a Pull Request.
+
+---
+
+## License
 
 MIT License
+
