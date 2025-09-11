@@ -11,7 +11,7 @@ Esta aplicação permite a emissão de certificados acadêmicos e gerenciamento 
 * PHP >= 8.1
 * Composer
 * MySQL ou outro banco compatível
-* Node.js e npm (opcional, se houver front-end)
+* Node.js e npm
 
 ---
 
@@ -20,8 +20,8 @@ Esta aplicação permite a emissão de certificados acadêmicos e gerenciamento 
 1. **Clonar o repositório**
 
 ```bash
-git clone <URL_DO_REPOSITORIO>
-cd <NOME_DA_PASTA>
+git clone https://github.com/thinnugly/plataforma-emissao-certificados-academicosII.git
+cd plataforma-emissao-certificados-academicosII
 ```
 
 2. **Instalar dependências do PHP**
@@ -61,7 +61,13 @@ php artisan route:clear
 php artisan view:clear
 ```
 
-7. **Rodar o servidor local**
+7. **Instale as dependências do NPM (Frontend)**
+
+```bash
+npm install
+```
+
+8. **Rodar o servidor local**
 
 ```bash
 php artisan serve
