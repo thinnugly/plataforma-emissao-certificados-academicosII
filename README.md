@@ -2,7 +2,7 @@
 
 ## Description
 
-This application allows the issuance of academic certificates and the management of users, roles, and permissions using Laravel and Laratrust.
+A digital platform for issuing and validating academic certificates, with user, role, and permission management implemented using Laravel and Laratrust. Designed for secure, verifiable, and efficient certificate handling.
 
 ---
 
